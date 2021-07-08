@@ -3,6 +3,17 @@ Hola, soy un programador novato, programo como hobby, he desarrollado una librer
 
 Esta libreria usa la comunicacion SPI a traves de la libreria PIGPIO, es necesaria ya que es la unica que permite tener velocidades decentes en la raspberry pi, si no la conocen la recomiendo basante.
 
+## **Requisitos**
+
+Instalar la libreria PIGPIO ya que la utiliza para la comunicacion SPI.
+
+> sudo apt-get install pigpio
+
+## **Conexion**
+
+Debido a que la libreria hace uso de la conexion SPI, debe conectarse a los pines SPI 0 o 1.
+
+
 
 ## **Clase**
 
@@ -13,11 +24,13 @@ Para el uso de la libreria debe crearse un objeto SSD1309, desde el cual se carg
 
 ## **Metodos** 
 
-### **init()**
+### **init(long speed)**
 
-Inicia la pantalla, comienza la comunicacion SPI, la configura e inicia la pantalla para funcionar correctamente..
+Inicia la pantalla, comienza la comunicacion SPI, la configura e inicia la pantalla para funcionar correctamente.
 
-> screen.init();
+Debe incluirse al inicio del la funcion principal antes de cargar los siguientes metodos y debe entregarse como argumento la velocidad de envio de datos, a mayor velocidad mas fps se obtendran de la pantalla (minimo 32Khz - maximo 9Mhz).
+
+> screen.init(3000000);
 
 ### **pixel(int x, int y)**
 

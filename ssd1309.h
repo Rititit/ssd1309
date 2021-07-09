@@ -17,25 +17,25 @@
 #define SETDISPLAYCLOCKDIV 	0xD5	// 0x80 PARA 32 PIX DE ALTO - 0xf0 para 64 PIX de alto
 #define SETMMULTIPLEX 		0xA8	// alto - 1 -> 0x3f
 #define SETDISPLAYOFFSET 	0xD3	// 0x00, no offset
-#define CHARGEPUMP 			0x8D	// ALIMENTACION DE PANTALLA - DEFAULT 0x14
-#define MEMORYMODE 			0x20	// MEMORYMODE HORIZ 0x00 - VERT 0x01 - PAGE 0x02
+#define CHARGEPUMP 		0x8D	// ALIMENTACION DE PANTALLA - DEFAULT 0x14
+#define MEMORYMODE 		0x20	// MEMORYMODE HORIZ 0x00 - VERT 0x01 - PAGE 0x02
 #define SETSEGREMAP 		0xA1	// SETSEGREMAP
-#define COMSCANDEC			0xC8	// COMSCANDEC
-#define SETCOMPINS 			0xDA 	// SETCOMPINS //LEGAL VALUES 0x02, 0x12, 0x022, 0x032
+#define COMSCANDEC		0xC8	// COMSCANDEC
+#define SETCOMPINS 		0xDA 	// SETCOMPINS //LEGAL VALUES 0x02, 0x12, 0x022, 0x032
 #define SETCONTRASTE		0x81 	// SETCONTRASTE //DE 0x00 A 0xFF
 #define SETPRECHANG 		0xD9 	// SETPRECHANG //SET PRECHANGED PERIOD - ALGO DE VOLTAJE - DEFAULT 0x22
-#define SETVCOMH 			0xDB	// SETVCOMH //SET VCOMH DESELCTED LEVEL - DEFAULT 0x20
+#define SETVCOMH 		0xDB	// SETVCOMH //SET VCOMH DESELCTED LEVEL - DEFAULT 0x20
 #define DISPLAYALLON 		0xA4 	// DISPLAYALLON (RAM A PANTALLA)
 #define NORMALDISPLAY		0xA6	// NORMALDISPLAY (NORMAL 0xA6 - INVERTIDO 0xA7)
 #define DEACTIVATESCROLL	0x2E	// DEACTIVATESCROLL (DESACTIVA EL SCROLL)
-#define DISPLAYON 			0xAF
-#define DISPLAYOFF			0xAE
+#define DISPLAYON 		0xAF
+#define DISPLAYOFF		0xAE
 #define SETPAGEADDR 		0x22	// SETPAGEADDR // SET PAGE ADDRESS 0x00 A 0x07
-#define SETCOLADDRE			0x21 	// SETCOLADDRE // SET COLUMN ADDRESS 0x00 A 0x7F
+#define SETCOLADDRE		0x21 	// SETCOLADDRE // SET COLUMN ADDRESS 0x00 A 0x7F
 
 
-#define DC 27			// Data command - le indica a la pantalla que debe recibir datos de imagen, defaul 27
-#define RESET 22		// RESET PIN - reinicia la pantalla, esencial para el buen funcionamiento e inicio de la pantalla
+#define DC 27		// Data command - le indica a la pantalla que debe recibir datos de imagen, defaul 27
+#define RESET 22	// RESET PIN - reinicia la pantalla, esencial para el buen funcionamiento e inicio de la pantalla
 #define MODE_3 0x000003	// modo SPI de la pantalla
 #define BITRATE 500000  // Velocidad de transferencia de datos de 32K a 30M
 
